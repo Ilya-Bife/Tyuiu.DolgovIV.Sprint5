@@ -10,7 +10,7 @@ namespace Tyuiu.DolgovIV.Sprint5.Task0.V22.Lib
         {
             string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask0.txt");
             double res = Math.Pow(1 - x, 2) / (-3 * x);
-            res = Math.Pow(res, 3);
+            res = Math.Round(res, 3);
             File.WriteAllText(path, Convert.ToString(res));
             return path;
         }
