@@ -30,6 +30,12 @@ namespace Tyuiu.DolgovIV.Sprint5.Task7.V25.Lib
                         }
                     }
                 }
+
+            }
+            while (endstr.Contains("  ") || endstr.Contains(" ."))
+            {
+                endstr = endstr.Replace("  ", " ");
+                endstr = endstr.Replace(" .", ".");
             }
             File.AppendAllText(Endpath, endstr);
             return Endpath;
