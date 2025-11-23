@@ -31,8 +31,8 @@ namespace Tyuiu.DolgovIV.Sprint5.Task7.V25.Lib
                     }
                 }
             }
-            File.AppendAllText(path, endstr);
-            return path;
+            File.AppendAllText(Endpath, endstr);
+            return Endpath;
             
         }
     }
